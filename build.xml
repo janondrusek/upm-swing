@@ -66,12 +66,12 @@
     <!-- The compile target compiles the source -->
     <target name="compile">
         <mkdir dir="${build}"/>
-        <javac srcdir="${src}" destdir="${build}" debug="on" failonerror="true" source="1.4" target="1.4">
+        <javac srcdir="${src}" destdir="${build}" debug="on" failonerror="true" source="1.8" target="1.8">
             <classpath refid="project.class.path"/>
         </javac>
 
         <mkdir dir="${test.build}"/>
-        <javac srcdir="${test.src}" destdir="${test.build}" debug="on" failonerror="true" source="1.4" target="1.4">
+        <javac srcdir="${test.src}" destdir="${test.build}" debug="on" failonerror="true" source="1.8" target="1.8">
             <classpath refid="project.class.path"/>
         </javac>
 
@@ -167,7 +167,7 @@
               mainclass="com._17od.upm.gui.MainWindow"
                    name="${full.name}"
                    icon="${basedir}\images\upm.icns"
-             jvmversion="1.4+"
+             jvmversion="1.8+"
                 version="${version}"
              screenmenu="true">
             <jarfilelist dir="${basedir}\lib" files="commons-codec-1.3.jar, commons-httpclient-3.0.jar, commons-logging-1.1.jar bcprov-jdk14-145.jar javacsv.jar commons-validator-1.4.0.jar"/>
